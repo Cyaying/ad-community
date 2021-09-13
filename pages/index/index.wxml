@@ -1,0 +1,131 @@
+<view class="banner">
+    <image src="/image/index/banner_image.jpg"></image>
+</view>
+
+<view class="navbar_container">
+    <view class="navbar">
+        <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item.name}}</text>
+    </view>
+    <swiper class="content" current="{{currentTab}}" circular="true" bindchange="swiperChange">
+        <swiper-item>
+            <scroll-view style="width: 100%; height: {{scrollHeight}}px" scroll-y="true" enable-flex="true">
+                <view  wx:for="{{articles[0]}}" wx:key="unique" data-id="{{index}}" data-url="{{articles[0][index].url}}" class="content_item" bindtap="toDetail">
+                    <view class="item_num">
+                        <image src="{{swiperItems[index].picUrl}}" mode="aspectFit"></image>
+                    </view>
+                    <view class="item_content">
+                        <text class="content_top">{{articles[0][index].title}}</text>
+                        <text class="content_mid">{{articles[0][index].desc}}</text>
+                        <view class="content_down">
+                            <text class="down_text1" color="red">{{articles[0][index].nickname}}</text>
+                            <view class="content_down_right">
+                                <image src="/image/index/hot.png"></image>
+                                <text class="down_text2">{{articles[0][index].views}}w热度</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view style="width: 100%; height: {{scrollHeight}}px" scroll-y="true" enable-flex="true">
+                <view  wx:for="{{articles[1]}}" wx:key="unique" data-id="{{index}}" data-url="{{articles[1][index].url}}" class="content_item" bindtap="toDetail">
+                    <view class="item_num">
+                        <image src="{{swiperItems[index].picUrl}}" mode="aspectFit"></image>
+                    </view>
+                    <view class="item_content">
+                        <text class="content_top">{{articles[1][index].title}}</text>
+                        <text class="content_mid">{{articles[1][index].desc}}</text>
+                        <view class="content_down">
+                            <text class="down_text1" color="red">{{articles[1][index].nickname}}</text>
+                            <view class="content_down_right">
+                                <image src="/image/index/hot.png"></image>
+                                <text class="down_text2">{{articles[1][index].views}}w热度</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view style="width: 100%; height: {{scrollHeight}}px" scroll-y="true" enable-flex="true">
+                <view  wx:for="{{articles[2]}}" wx:key="unique" data-id="{{index}}" data-url="{{articles[2][index].url}}" class="content_item" bindtap="toDetail">
+                    <view class="item_num">
+                        <image src="{{swiperItems[index].picUrl}}" mode="aspectFit"></image>
+                    </view>
+                    <view class="item_content">
+                        <text class="content_top">{{articles[2][index].title}}</text>
+                        <text class="content_mid">{{articles[2][index].desc}}</text>
+                        <view class="content_down">
+                            <text class="down_text1" color="red">{{articles[2][index].nickname}}</text>
+                            <view class="content_down_right">
+                                <image src="/image/index/hot.png"></image>
+                                <text class="down_text2">{{articles[2][index].views}}w热度</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view style="width: 100%; height: {{scrollHeight}}px" scroll-y="true" enable-flex="true">
+                <view  wx:for="{{articles[3]}}" wx:key="unique" data-id="{{index}}" data-url="{{articles[3][index].url}}" class="content_item" bindtap="toDetail">
+                    <view class="item_num">
+                        <image src="{{swiperItems[index].picUrl}}" mode="aspectFit"></image>
+                    </view>
+                    <view class="item_content">
+                        <text class="content_top">{{articles[3][index].title}}</text>
+                        <text class="content_mid">{{articles[3][index].desc}}</text>
+                        <view class="content_down">
+                            <text class="down_text1" color="red">{{articles[3][index].nickname}}</text>
+                            <view class="content_down_right">
+                                <image src="/image/index/hot.png"></image>
+                                <text class="down_text2">{{articles[3][index].views}}w热度</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view style="width: 100%; height: {{scrollHeight}}px" scroll-y="true" enable-flex="true">
+                <view  wx:for="{{articles[4]}}" wx:key="unique" data-id="{{index}}" data-url="{{articles[4][index].url}}" class="content_item" bindtap="toDetail">
+                    <view class="item_num">
+                        <image src="{{swiperItems[index].picUrl}}" mode="aspectFit"></image>
+                    </view>
+                    <view class="item_content">
+                        <text class="content_top">{{articles[4][index].title}}</text>
+                        <text class="content_mid">{{articles[4][index].desc}}</text>
+                        <view class="content_down">
+                            <text class="down_text1" color="red">{{articles[4][index].nickname}}</text>
+                            <view class="content_down_right">
+                                <image src="/image/index/hot.png"></image>
+                                <text class="down_text2">{{articles[4][index].views}}w热度</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view style="width: 100%; height: {{scrollHeight}}px" scroll-y="true" enable-flex="true">
+                <view  wx:for="{{articles[5]}}" wx:key="unique" data-id="{{index}}" data-url="{{articles[5][index].url}}" class="content_item" bindtap="toDetail">
+                    <view class="item_num">
+                        <image src="{{swiperItems[index].picUrl}}" mode="aspectFit"></image>
+                    </view>
+                    <view class="item_content">
+                        <text class="content_top">{{articles[5][index].title}}</text>
+                        <text class="content_mid">{{articles[5][index].desc}}</text>
+                        <view class="content_down">
+                            <text class="down_text1" color="red">{{articles[5][index].nickname}}</text>
+                            <view class="content_down_right">
+                                <image src="/image/index/hot.png"></image>
+                                <text class="down_text2">{{articles[5][index].views}}w热度</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

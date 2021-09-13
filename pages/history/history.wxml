@@ -1,0 +1,18 @@
+<scroll-view style="width: 100%; height: {{scrollHeight}}px" scroll-y="true" enable-flex="true">
+    <view  wx:for="{{history}}" wx:key="unique" data-id="{{index}}" class="items_container" bindtap="toDetail" bindlongpress="delHistory">
+        <view class="item_num">
+            <image src="{{picUrl[index]}}" mode="aspectFit"></image>
+        </view>
+        <view class="item_content">
+            <text class="content_top">{{history[index].title}}</text>
+            <text class="content_mid">{{history[index].desc}}</text>
+            <view class="content_down">
+                <text class="down_text1">{{history[index].nickname}}</text>
+                <view class="content_down_right">
+                    <image src="/image/index/h_hot.png"></image>
+                    <text class="down_text2">{{history[index].views}}w热度</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

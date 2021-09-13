@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/search/search",
+        "pages/user/user",
+        "pages/detail/detail",
+        "pages/known/known",
+        "pages/history/history"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "backgroundTextStyle": "light",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/image/tab/index.png",
+                "selectedIconPath": "/image/tab/index_click.png"
+            },
+            {
+                "pagePath": "pages/search/search",
+                "text": "查询",
+                "iconPath": "/image/tab/search.png",
+                "selectedIconPath": "/image/tab/search_click.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "我的",
+                "iconPath": "/image/tab/user.png",
+                "selectedIconPath": "/image/tab/user_click.png"
+            }
+        ],
+        "color": "#707070",
+        "selectedColor": "#D81F06",
+        "backgroundColor": "#FFFFFF"
+    },
+    "sitemapLocation": "sitemap.json"
+}

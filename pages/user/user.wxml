@@ -1,0 +1,27 @@
+<view class="user_container">
+    <image class="user_avatar" src="{{userInfo.avatarUrl}}" bindtap="getUserProfile"></image>
+    <text class="user_nickName">{{userInfo.nickName}}</text>
+    <view class="user_info">
+        <view class="item_1" bindtap="toHistory">
+            <image class="img_1" src="/image/user/history.png"></image>
+            <text>观看历史</text>
+            <image class="img_arrow" src="/image/user/arrow.png"></image>
+        </view>
+        <view class="item_2">
+            <image class="img_2" src="/image/user/collect.png"></image>
+            <text>我的收藏</text>
+            <image class="img_arrow" src="/image/user/arrow.png"></image>
+        </view>
+        <view class="item_3" bindtap="toKnown">
+            <image class="img_3" src="/image/user/notice.png"></image>
+            <text>平台须知</text>
+            <image class="img_arrow" src="/image/user/arrow.png"></image>
+        </view>
+        <view class="item_4">
+            <image class="img_4" src="/image/user/contact.png"></image>
+            <text>联系我们</text>
+            <button class='contact-btn' open-type='contact'></button>
+            <image class="img_arrow" src="/image/user/arrow.png"></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,22 @@
+<page>
+    <view class="glass">
+        <view class="title">上传图片</view>
+        <view class="imgList">
+            <view class="item" wx:if="{{uploadPics.length!=0}}">
+                <image src="{{uploadPics[0]}}" alt="" class="img" mode="aspectFit"></image>
+                <view class="delImg" bindtap="deleteImg">
+                    <image src="/image/search/del.png"></image>
+                </view>
+            </view>
+            <view class="item" wx:else bindtap="chooseImg">
+                <image src="/image/search/add.png" class="add"></image>
+            </view>
+        </view>
+        <view class="butt">
+            <button bindtap="uploadImg">
+                <image class="btnImg" src="/image/search/btn.png"></image>
+                <view>确认提交</view>
+            </button>
+        </view>
+    </view>
+</page>

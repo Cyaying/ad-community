@@ -1,0 +1,17 @@
+<view class="all_container">
+    <view class="title">
+        <text style="color: rgb(159, 159, 159);">AD community   (AD 社区)</text>
+    </view>
+    <view class="content">
+        <view class="content-top"><text style="font-size: 30rpx; font-weight: bold; color: rgb(159, 159, 159);">简介</text></view>
+        <view class="content-down">
+            <text space="nbsp" style="font-size: 30rpx; color: rgb(159, 159, 159);">        AD 社区是由 Catcher 团队研发打造的基于微信应用的健康生活类插件，是一款基于微信平台的服务于“阿尔兹海默症”患者及其家属的小程序应用。\n\n</text>
+        </view>
+        <view class="content-down">
+            <text space="nbsp" style="font-size: 30rpx; color: rgb(159, 159, 159);">        AD 社区主要由“首页文章”、“病况估计”、“个人中心”三部分页面组成。在文章页包含了有关AD病的不同种类的文章资料，这些文章均是按热度为您推荐。除此之外，您还可在查询页通过上传一张大脑的FMRI图片估计出得AD病得概率，这是此款小程序得特色。\n\n</text>
+        </view>
+        <view class="content-down">
+            <text space="nbsp" style="font-size: 30rpx; color: rgb(159, 159, 159);">        AD 社区更是...  (期待您的发现)\n</text>
+        </view>
+    </view>
+</view>
